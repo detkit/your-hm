@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>University Website Design</title>
+		<link rel="stylesheet" href="style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<section class="sub-header">
+			<nav>
+				<a href="index.html">
+					<img src="images/logo.png" alt="" />
+				</a>
+				<div class="nav-links" id="navLinks">
+					<i
+						class="fa-solid fa-circle-xmark"
+						onclick="closeMenu()"
+					></i>
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+						<li>
+							<a href="course.html">Course</a>
+						</li>
+						<li>
+							<a href="blog.html">Blog</a>
+						</li>
+						<li>
+							<a href="contact.html">Contact</a>
+						</li>
+					</ul>
+				</div>
+				<i class="fa-solid fa-bars" onclick="showMenu()"></i>
+			</nav>
+
+			<h1>About Us</h1>
+		</section>
+
+		<!-------- content  ---------->
+		<section class="about-us">
+			<div class="row">
+				<div class="about-col">
+					<h1>We are the world's largest university</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						A laborum similique itaque modi ab voluptate dolor
+						officia non, necessitatibus nihil minus aliquam
+						reprehenderit harum quisquam eligendi cumque, ut minima
+						beatae? Omnis fugit itaque, optio beatae sapiente
+						voluptates deserunt aliquam nobis? A at eaque totam
+						debitis eveniet eum odio quis nisi!
+					</p>
+					<a href="" class="hero-btn btn-prima">EXPLORE NOW</a>
+				</div>
+				<div class="about-col">
+					<img src="images/about.jpg" alt="" />
+				</div>
+			</div>
+		</section>
+
+		<!-------- Footer  ---------->
+		<section class="footer">
+			<h4>About Us</h4>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+				soluta quos sed dignissimos dicta ab ex <br />facilis nostrum
+				fugit at molestiae minus exercitationem dolorem voluptatibus
+				facere cupiditate neque fuga mollitia?
+			</p>
+			<div class="icons">
+				<i class="fa-brands fa-facebook-f"></i>
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-linkendin"></i>
+			</div>
+
+			<p>Made with <i class="fa-regular fa-heart"></i> Quang</p>
+		</section>
+
+		<script>
+			const navLinks = document.getElementById('navLinks');
+
+			function showMenu() {
+				navLinks.style.right = '0';
+			}
+
+			function closeMenu() {
+				navLinks.style.right = '-200px';
+			}
+		</script>
+	</body>
+</html>
